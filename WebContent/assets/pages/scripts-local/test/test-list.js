@@ -16,7 +16,7 @@ function listNews(){
         	console.log(news.eventUUID);
         	console.log(news.title);
         	
-        	var result = news.globalId+","+news.eventUUID+","+news.title;
+        	var result = news.globalId+"<br/>"+news.eventUUID+"<br/>"+news.title;
         	$("#news_data").html(result);
         },
         error:function(XMLHttpRequest, textStatus){

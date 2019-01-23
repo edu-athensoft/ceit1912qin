@@ -1,5 +1,6 @@
 package com.athensoft.test.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,28 @@ public class TestController {
 		model.put("mydbdata", result);
 		
 		return mav;
+	}
+	
+	
+	@RequestMapping("/news")
+	public ModelAndView getDataNewsList(){
+		List<News> result = testService.getNewsList();
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("news-list");
+		
+		Map<String, Object> model = mav.getModel();
+		model.put("newsList", result);
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/newsjson", produces="application/json")
+	@ResponseBody
+	public List<News> getDataNewsListJSON(){
+		List<News> result = testService.getNewsList();
+		
+		return result;
 	}
 	
 	
