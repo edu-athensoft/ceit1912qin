@@ -1,6 +1,12 @@
 package com.athensoft.test.entity;
 
-public class News {
+import java.io.Serializable;
+
+public class News implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4053926358562218768L;
 	private Long globalId;
 	private String eventUUID;
 	private String title;
