@@ -5,6 +5,15 @@ public class News {
 	private String eventUUID;
 	private String title;
 	
+	public News(){
+		
+	}
+	public News(Long globalId, String eventUUID, String title) {
+		super();
+		this.globalId = globalId;
+		this.eventUUID = eventUUID;
+		this.title = title;
+	}
 	public Long getGlobalId() {
 		return globalId;
 	}

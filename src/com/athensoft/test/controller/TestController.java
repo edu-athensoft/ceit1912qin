@@ -5,8 +5,10 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.athensoft.test.entity.News;
 import com.athensoft.test.service.TestService;
 
 @Controller
@@ -18,6 +20,11 @@ public class TestController {
 	
 	@RequestMapping("")
 	public String gotoHomePage(){
+		return "index";
+	}
+	
+	@RequestMapping("/home")
+	public String gotoHomePage2(){
 		return "index";
 	}
 	
@@ -47,4 +54,7 @@ public class TestController {
 		
 		return mav;
 	}
+	
+	
+	
 }
