@@ -18,6 +18,9 @@
     <context:component-scan base-package="com.athensoft.tag.controller"></context:component-scan>
     <context:component-scan base-package="com.athensoft.test.controller"></context:component-scan>
     
+    <!-- For news module -->
+    <context:component-scan base-package="com.athensoft.event.controller"></context:component-scan>
+    
 
     <!-- View Resolver -->
     <bean id="jspViewResolver"
