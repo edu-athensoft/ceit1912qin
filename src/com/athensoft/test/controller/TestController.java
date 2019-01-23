@@ -23,11 +23,7 @@ public class TestController {
 		return "index";
 	}
 	
-	@RequestMapping("/home")
-	public String gotoHomePage2(){
-		return "index";
-	}
-	
+		
 	@RequestMapping("/datapage")
 	public ModelAndView gotoDataPage(){
 		String result = testService.processData();

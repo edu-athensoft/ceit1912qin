@@ -9,6 +9,13 @@
 <body>
 	<h1>Welcome to Spring MVC</h1>
 	
+	<div id="news_data"></div>
 	
+	<a href="javascript:void(0);" onclick="listNews();">Get JSON Data</a>
 </body>
+<script type="text/javascript" src="assets/global/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="assets/pages/scripts-local/test/test-list.js"></script>
+<script>
+	
+</script>
 </html>
